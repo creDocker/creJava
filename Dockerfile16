@@ -31,6 +31,6 @@ WORKDIR /cre/
 
 #CMD ["/usr/bin/java"]
 
-ENTRYPOINT ["/cre/node-entrypoint.sh"]
+ENTRYPOINT ["/cre/java-entrypoint.sh"]
 
-CMD ["shoreman", "/cre/node-procfile"]
+CMD ["shoreman", "/cre/java-procfile"]

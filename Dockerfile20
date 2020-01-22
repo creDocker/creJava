@@ -5,19 +5,19 @@
 #
 
 # Pull base image.
-FROM tamboraorg/creubuntu:2016.0
+FROM tamboraorg/creubuntu:0.2020
 
 MAINTAINER Michael Kahle <michael.kahle@yahoo.de>
 
-ARG BUILD_YEAR=2016
+ARG BUILD_YEAR=2020
 ARG BUILD_MONTH=0
-ARG BUILD_TAG=2016.0
+ARG BUILD_TAG=0.2020
 
 # version: yyyy.n for stable versions / 0.yyyy for development
 ENV DEBIAN_FRONTEND noninteractive 
 ENV INITRD No
 #ENV LANG en_US.UTF-8
-ENV JAVA_VERSION 10 
+ENV JAVA_VERSION 11 
 
 LABEL Name="Java for CRE" \
       CRE=$CRE_VERSION \ 

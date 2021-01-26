@@ -29,6 +29,8 @@ LABEL Name="Java for CRE" \
       OS="Ubuntu:$UBUNTU_VERSION" \
       Build_=$BUILD_TAG 
 
+RUN apt-cache search openjdk
+
 RUN apt-get update && \
 #    apt-get install --no-install-recommends -y default-jre && \
 #    apt-get install --no-install-recommends -y openjdk-$JAVA_VERSION-jre \

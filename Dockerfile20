@@ -17,13 +17,9 @@ ARG BUILD_TAG=2020.0
 ENV DEBIAN_FRONTEND noninteractive 
 ENV INITRD No
 #ENV LANG en_US.UTF-8
-<<<<<<< Updated upstream
 ENV JAVA_VERSION 11 #LTS
 #ENV JAVA_VERSION 14 
-=======
-ENV JAVA_VERSION 11
-#11.0.5 
->>>>>>> Stashed changes
+
 
 LABEL Name="Java for CRE" \
       CRE=$CRE_VERSION \ 

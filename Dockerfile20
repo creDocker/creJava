@@ -17,9 +17,8 @@ ARG BUILD_TAG=2020.0
 ENV DEBIAN_FRONTEND noninteractive 
 ENV INITRD No
 #ENV LANG en_US.UTF-8
-#ENV JAVA_VERSION 11 #LTS
-#ENV JAVA_VERSION 13 
-ENV JAVA_VERSION 14 
+ENV JAVA_VERSION 11 #LTS
+#ENV JAVA_VERSION 14 
 
 LABEL Name="Java for CRE" \
       CRE=$CRE_VERSION \ 
@@ -30,8 +29,8 @@ LABEL Name="Java for CRE" \
       Build_=$BUILD_TAG 
 
 RUN apt-get update && \
-#    apt-get install --no-install-recommends -y default-jre && \
-    apt-get install --no-install-recommends -y openjdk-$JAVA_VERSION-jre \
+    apt-get install --no-install-recommends -y default-jre && \
+#    apt-get install --no-install-recommends -y openjdk-$JAVA_VERSION-jre \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

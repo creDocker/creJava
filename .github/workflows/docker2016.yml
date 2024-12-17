@@ -30,12 +30,12 @@ jobs:
         with:
           file: ./Dockerfile16
           push: true
-          tags: tamboraorg/crejava:check16
+          tags: credocker/crejava:check16
 
       -
         name: Test
         run: |
-          docker run tamboraorg/crejava:check16 /cre/java-test.sh  
+          docker run credocker/crejava:check16 /cre/java-test.sh  
       -
         name: Build and push
         id: docker_push
@@ -43,5 +43,5 @@ jobs:
         with:
           file: ./Dockerfile16
           push: true
-          tags: tamboraorg/crejava:2016.0 
+          tags: credocker/crejava:2016.0 
 

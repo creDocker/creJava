@@ -44,6 +44,6 @@ jobs:
         with:
           file: ./Dockerfile20
           push: true
-          tags: credocker/crejava:2020.0, tamboraorg/crejava:latest 
+          tags: credocker/crejava:2020.0, credocker/crejava:latest 
       
 
